@@ -23,16 +23,16 @@ layout:
 environment:
     base:
         registry: nvcr.io
-        image: nvidia/ai-workbench/pytorch:1.0.6
+        image: nvcr.io/nvidia/pytorch:25.09-py3
         build_timestamp: "20250205043447"
         name: PyTorch
         supported_architectures: []
-        cuda_version: 12.6.3
-        description: A Pytorch 2.6 Base with CUDA 12.6.3
+        cuda_version: 13.0
+        description: A Pytorch 2.9.0 for Spark DGX
         entrypoint_script: ""
         labels:
-            - cuda12.6.3
-            - pytorch2.6
+            - cuda13.0
+            - pytorch2.9
         apps:
             - name: jupyterlab
               type: jupyterlab
@@ -69,7 +69,7 @@ environment:
         programming_languages:
             - python3
         icon_url: https://workbench.download.nvidia.com/static/img/ai-workbench-icon-rectangle.jpg
-        image_version: 1.0.6
+        image_version: 25.09
         os: linux
         os_distro: ubuntu
         os_distro_release: "24.04"
